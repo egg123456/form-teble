@@ -1,0 +1,19 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "browsers": ["last 10 versions", "ie >= 9"]
+      }
+    }],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    ["import", {
+      "libraryName": "qianyuxingye",
+      "style": true
+    }],
+    ["@babel/plugin-transform-destructuring", { "loose": true }],
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    "@babel/plugin-proposal-class-properties"
+  ]
+}
